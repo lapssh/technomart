@@ -6,15 +6,18 @@
   </head>
   <body>
     <header>
-      <section class="order">
+      <div class="order">
         <h2>Статус заказа</h2>
+        <img src="img/logo/logo-technomart.svg" alt="логотип Техномарт" style="background-color: red">
         <p>Техномарт</p>
-        <p>Поиск</p>
+        <form action="#" method="POST">
+          <input type="search" placeholder="Поиск:">
+        </form>
         <p>Закладки: 0</p>
         <p>Корзина: 0</p>
         <p>Оформить заказ</p>
-      </section>
-      <i>Интернет-магазин строительных материалов и инструментов для ремонта</i>
+      </div>
+      <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
       <address>
         <h2>Контакты</h2>
         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -43,22 +46,23 @@
         <h2>Каталог</h2>
         <table>
           <tr>
-            <td>Материалы<br>
+            <td bgcolor="orange">Материалы<br>
               <button>на любой вкус</button>
-              <img src="#" alt="ведро с краской">
+              <img src="img/icon/icon-materials.svg" alt="ведро с краской" width="44" height="65">
             </td>
-            <td>Инструмент<br>
-              <button>на вслучаи</button>
-              <img src="#" alt="дрель">
+            <td bgcolor="#3bbce3">Инструмент<br>
+              <button>на все вслучаи</button>
+              <img src="img/icon/icon-drel.svg" alt="дрель" width="75" height="61">
             </td>
-            <td>Техника<br>
+            <td bgcolor="dc91d8">Техника<br>
               <button>для стройки</button>
-              <img src="#" alt="трактор">
+              <img src="img/icon/icon-tractor.svg" alt="трактор" width="78" height="62">
             </td>
           </tr>
           <tr>
             <td colspan="2" rowspan="2">
               <section>
+                <img src="img/slider/perforators.jpg" width="620" height="266" alt="Перфораторы">
                 <div class="dark-side">
                   <p>Перфораторы</p>
                   <p>Настоящие мужские игрушки</p>
@@ -66,44 +70,44 @@
                 <button>Открыть каталог</button>
               </section>
             </td>
-            <td>Скидки<br>
+            <td bgcolor="#8ed78f">Скидки 50%<br>
             <button>на 350 товаров</button>
-            <img src="#" alt="корзина">
+            <img src="img/icon/icon-cart.svg" alt="корзина" width="59" height="72">
             </td>
           </tr>
           <tr>
-            <td>
+            <td bgcolor="ffc047">
               Доставка<br>
               <button>бесплатно</button>
-              <img src="#" alt="грузовик">
+              <img src="img/icon/icon-gruzovik.svg" alt="грузовик" width="78" height="63">
             </td>
           </tr>
         </table>
       </section>
       <section class="popular-products">
-        <h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
+        ПОПУЛЯРНЫЕ ТОВАРЫ:
         <button>ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</button>
         <ul>
           <li>
-            <img src="#" alt="перфоратор BFG 9000">
+            <img src="img/products/bosch-bfg-9000.jpg" alt="перфоратор BFG 9000" width="184" height="164">
             <p>Перфоратор BOSCH BFG 9000</p>
             <p><del>32500 Р.</del></p>
             <button>25500 Р.</button>
           </li>
           <li>
-            <img src="#" alt="перфоратор BFG 3000">
+            <img src="img/products/bosch-bfg-3000.jpg" alt="перфоратор BFG 3000" width="127" height="112">
             <p>Перфоратор BOSCH BFG 3000</p>
             <p><del>22500 Р.</del></p>
             <button>15500 Р.</button>
           </li>
           <li>
-            <img src="#" alt="перфоратор BFG 6000">
+            <img src="img/products/bosch-bfg-6000.jpg" alt="перфоратор BFG 6000" width="144" height="128">
             <p>Перфоратор BOSCH BFG 6000</p>
             <p><del>30500 Р.</del></p>
             <button>25500 Р.</button>
           </li>
           <li>
-            <img src="#" alt="перфоратор BFG 2000">
+            <img src="img/products/bosch-bfg-2000.jpg" alt="перфоратор BFG 2000" width="127" height="112">
             <p>Перфоратор BOSCH BFG 2000</p>
             <p><del>22500 Р.</del></p>
             <button>12500 Р.</button>
@@ -111,20 +115,20 @@
         </ul>
       </section>
       <section class="brands">
-        <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
+        ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:
         <button>ВСЕ ПРОИЗВОДИТЕЛИ</button>
         <table>
           <tr>
-            <td><a href="#"><img src="#" alt="BOSCH"></a></td>
-            <td><a href="#"><img src="#" alt="makita"></a></td>
-            <td><a href="#"><img src="#" alt="DeWALT"></a></td>
-            <td><a href="#"><img src="#" alt="интерскол"></a></td>
+            <td><a href=""><img src="img/brand/bosch.jpg" alt="BOSCH" width="126" height="37"></a></td>
+            <td><a href="#"><img src="img/brand/Makita.jpg" alt="makita" width="123" height="40"></a></td>
+            <td><a href="#"><img src="img/brand/DeWALT.jpg" alt="DeWALT" width="146" height="44"></a></td>
+            <td><a href="#"><img src="img/brand/interskol.jpg" alt="интерскол" width="200" height="76"></a></td>
           </tr>
           <tr>
-            <td><a href="#"><img src="#" alt="HITACHI"></a></td>
-            <td><a href="#"><img src="#" alt="LG"></a></td>
-            <td><a href="#"><img src="#" alt="AEG"></a></td>
-            <td><a href="#"><img src="#" alt="metabo"></a></td>
+            <td><a href="#"><img src="img/brand/Hitachi.jpg" alt="HITACHI" width="169" height="31"></a></td>
+            <td><a href="#"><img src="img/brand/LG.jpg" alt="LG" width="121" height="73"></a></td>
+            <td><a href="#"><img src="img/brand/AEG.jpg" alt="AEG" width="151" height="96"></a></td>
+            <td><a href="#"><img src="img/brand/Metabo.jpg" alt="metabo" width="204" height="69"></a></td>
           </tr>
         </table>
       </section>
@@ -141,7 +145,7 @@
         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду
          совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш
           этаж!</p>
-        <img src="#" alt="большой грузовик">
+        <img src="img/truck.png" alt="большой грузовик" width="468" height="261">
       </section>
       <section class="about">
         <h2>О компании</h2>
@@ -162,7 +166,8 @@
         <address>
           <h3>КОНТАКТЫ</h3>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-          <a href="blank.html"><img src="#" alt="карта"></a>
+          <a href="blank.html"><img src="img/map.jpg" alt="карта" width="300" height="158"></a>
+          <br>
           <a href="blank.html"><button>ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</button></a>
         </address>
 
