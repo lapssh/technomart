@@ -1,0 +1,19 @@
+.catalog-item {
+    width: 300px;
+    height: 123px;
+    background-color: orange;
+}
+
+.catalog-gallery {
+    width: 620px;
+    height: 256px;
+}
+
+.gallery {
+    width: 620px;
+    height: 256px;
+}
+
+.logo {
+    background-color: red;
+}

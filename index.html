@@ -2,8 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <!-- <link rel="icon" href="img/icon/favicon16.png" sizes="16x16" type="image/png"> -->
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="img/icon/apple-touch-icon.png">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
@@ -11,7 +14,7 @@
       <div class="order">
         <h2>Статус заказа</h2>
         <a>
-          <img src="img/logo/logo-technomart.svg" alt="логотип Техномарт" style="background-color: red">
+          <img class="logo" src="img/logo/logo-technomart.svg" alt="логотип Техномарт" width="108" height="18">
         </a>
         <form action="#" method="POST">
           <input type="search" placeholder="Поиск:">
@@ -22,7 +25,7 @@
       </div>
       <p>Интернет-магазин<br> строительных материалов и инструментов для ремонта</p>
       <address>
-        <h2>Контакты</h2>
+        <p>Контакты</p>
         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </address>
@@ -47,48 +50,46 @@
       <h1>Интернет магазин "Техномарт"</h1>
       <section class="catalog">
         <h2>Каталог</h2>
-        <table>
-          <tr>
-            <td bgcolor="orange">Материалы<br>
-              <button>на любой вкус</button>
-              <img src="img/icon/icon-materials.svg" alt="ведро с краской" width="44" height="65">
-            </td>
-            <td bgcolor="#3bbce3">Инструмент<br>
-              <button>на все вслучаи</button>
-              <img src="img/icon/icon-drel.svg" alt="дрель" width="75" height="61">
-            </td>
-            <td bgcolor="dc91d8">Техника<br>
-              <button>для стройки</button>
-              <img src="img/icon/icon-tractor.svg" alt="трактор" width="78" height="62">
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2" rowspan="2">
-              <section>
-                <img src="img/slider/perforators.jpg" width="620" height="266" alt="Перфораторы">
-                <div class="dark-side">
-                  <p>Перфораторы</p>
-                  <p>Настоящие мужские игрушки</p>
-                </div>
-                <button>Открыть каталог</button>
-              </section>
-            </td>
-            <td bgcolor="#8ed78f">Скидки 50%<br>
+        <ul>
+          <li class="catalog-item">
+            Материалы<br>
+            <button>на любой вкус</button>
+            <img src="img/icon/icon-materials.svg" alt="ведро с краской" width="44" height="65">
+          </li>
+          <li class="catalog-item">
+            Инструмент<br>
+            <button>на все вслучаи</button>
+            <img src="img/icon/icon-drel.svg" alt="дрель" width="75" height="61">
+          </li>
+          <li class="catalog-item">
+            Техника<br>
+            <button>для стройки</button>
+            <img src="img/icon/icon-tractor.svg" alt="трактор" width="78" height="62">
+          </li>
+          <li class="catalog-gallery">
+            <div class="gallery">
+              <img src="img/slider/perforators.jpg" width="620" height="266" alt="Перфораторы">
+              <div class="dark-side">
+                <p>Перфораторы</p>
+                <p>Настоящие мужские игрушки</p>
+              </div>
+              <button>Открыть каталог</button>
+            </div>
+          </li>
+          <li class="catalog-item">
+            Скидки 50%<br>
             <button>на 350 товаров</button>
             <img src="img/icon/icon-cart.svg" alt="корзина" width="59" height="72">
-            </td>
-          </tr>
-          <tr>
-            <td bgcolor="ffc047">
-              Доставка<br>
-              <button>бесплатно</button>
-              <img src="img/icon/icon-gruzovik.svg" alt="грузовик" width="78" height="63">
-            </td>
-          </tr>
-        </table>
+          </li>
+          <li class="catalog-item">
+            Доставка<br>
+            <button>бесплатно</button>
+            <img src="img/icon/icon-gruzovik.svg" alt="грузовик" width="78" height="63">
+          </li>
+        </ul>
       </section>
       <section class="popular-products">
-        ПОПУЛЯРНЫЕ ТОВАРЫ:
+        <h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
         <button>ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</button>
         <ul>
           <li>
@@ -118,37 +119,33 @@
         </ul>
       </section>
       <section class="brands">
-        ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:
+        <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
         <button>ВСЕ ПРОИЗВОДИТЕЛИ</button>
-        <table>
-          <tr>
-            <td><a href=""><img src="img/brand/bosch.jpg" alt="BOSCH" width="126" height="37"></a></td>
-            <td><a href="#"><img src="img/brand/Makita.jpg" alt="makita" width="123" height="40"></a></td>
-            <td><a href="#"><img src="img/brand/DeWALT.jpg" alt="DeWALT" width="146" height="44"></a></td>
-            <td><a href="#"><img src="img/brand/interskol.jpg" alt="интерскол" width="200" height="76"></a></td>
-          </tr>
-          <tr>
-            <td><a href="#"><img src="img/brand/Hitachi.jpg" alt="HITACHI" width="169" height="31"></a></td>
-            <td><a href="#"><img src="img/brand/LG.jpg" alt="LG" width="121" height="73"></a></td>
-            <td><a href="#"><img src="img/brand/AEG.jpg" alt="AEG" width="151" height="96"></a></td>
-            <td><a href="#"><img src="img/brand/Metabo.jpg" alt="metabo" width="204" height="69"></a></td>
-          </tr>
-        </table>
+        <ul>
+          <li><a href=""><img src="img/brand/bosch.jpg" alt="BOSCH" width="126" height="37"></a></li> 
+          <li><a href="#"><img src="img/brand/Makita.jpg" alt="makita" width="123" height="40"></a></li> 
+          <li><a href="#"><img src="img/brand/DeWALT.jpg" alt="DeWALT" width="146" height="44"></a></li> 
+          <li><a href="#"><img src="img/brand/interskol.jpg" alt="интерскол" width="200" height="76"></a></li> 
+          <li><a href="#"><img src="img/brand/Hitachi.jpg" alt="HITACHI" width="169" height="31"></a></li> 
+          <li><a href="#"><img src="img/brand/LG.jpg" alt="LG" width="121" height="73"></a></li> 
+          <li><a href="#"><img src="img/brand/AEG.jpg" alt="AEG" width="151" height="96"></a></li> 
+          <li><a href="#"><img src="img/brand/Metabo.jpg" alt="metabo" width="204" height="69"></a></li> 
+        </ul>
       </section>
       <section class="services">
         <h2>СЕРВИСЫ</h2>
         <p>Хороший интернет-магазин отличается от плохого не только ценами!
            Мы стараемся изо всех сил, что бы сделать ваши покупки приятными.</p>
-        <aside>
+        <div>
           <a href="blank.html">Доставка</a>
           <a href="blank.html">Гарантия</a>
           <a href="blank.html">Кредит</a>
-        </aside>
         <h3>ДОСТАВКА</h3>
         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду
          совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш
           этаж!</p>
         <img src="img/truck.png" alt="большой грузовик" width="468" height="261">
+        </div>
       </section>
       <section class="about">
         <h2>О компании</h2>
@@ -164,14 +161,14 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a href="blank.html"><button>ПОДРОБНЕЕ О КОМПАНИИ</button></a>
+          <button>ПОДРОБНЕЕ О КОМПАНИИ</button>
         </div>
         <address>
-          <h3>КОНТАКТЫ</h3>
+          <p>КОНТАКТЫ</p>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
           <a href="blank.html"><img src="img/map.jpg" alt="карта" width="300" height="158"></a>
           <br>
-          <a href="blank.html"><button>ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</button></a>
+          <button>ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</button>
         </address>
 
       </section>
